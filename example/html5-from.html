@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5 增强的表单 演示</title>
+	</head>
+	<body>
+	    <fieldset>
+    <legend>只能表单演示：请用最新Opera 浏览器</legend>
+    <form action="" method="POST" id="form1">
+        <input type="text" autofocus="autofocus" required pattern="\d+" name="auto" placeholder="必填项测试" />
+        <input type="number" name="demoNumber" min="1" max="100" step="2" />
+        <input type="email" placeholder="请输入邮箱" name="mail" />
+        <input type="url" name="url" placeholder="输入正确的网址" />
+        <br />
+        日期：<input type="date" name="time" />
+        颜色：
+        <input type="color" name="color" /><br />
+        <br />
+        <input type="range" min="0" max="50" step="5" name="rangedemo" value="0" />
+        <output onforminput="value=rangedemo.value">0</output>
+        <br />
+        <input type="submit" value="提交表单" />
+    </form>
+    表单外的input标签：
+    <input type="text" form="form1" name="demo" />
+</fieldset>
+	</body>
+</html>

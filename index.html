@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Html 5 学习-开启H5时代</title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="img/icon.ico" />
+		<link rel="stylesheet" href="shower/styles/screen-16x10.css">
+	</head>
+
+	<body class="shower list">
+		<header class="caption">
+			<h1>Html 5 学习-开启H5时代</h1>
+			<p>GETTING STARTED WITH HTML5.</p>
+		</header>
+		<section class="slide" id="cover">
+			<h2>Html 5 学习-开启H5时代</h2>
+			<p>Getting started with html5.</p>
+			<img src="img/ball-pool.jpg" alt="" class="cover">
+			<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+			<style>
+				#cover h2 {
+					margin: 30px 0 0;
+					color: #FFF;
+					text-align: center;
+					font-size: 70px;
+				}
+
+				#cover p {
+					margin: 10px 0 0;
+					text-align: center;
+					color: #FFF;
+					font-style: italic;
+					font-size: 20px;
+				}
+
+				#cover p a {
+					color: #FFF;
+				}
+			</style>
+		</section>
+		<section class="slide">
+			<h2>什么是HTML5？</h2>
+			<ol>
+				<li>HTML5是HTML的最新版本，最近才获得部分支持的网络浏览器的制造商。</li>
+				<li>它包含了从早期版本的HTML的所有功能，包括更严格的XHTML。</li>
+				<li>它为网络开发人员使用了多种多样的新工具。</li>
+				<li>它仍然是一个进展中的工作。没有浏览器完全支持HTML5。这将是很多年——也许直到2018年或更晚才得到充分的定义和支持。</li>
+			</ol>
+			<p class="note">HTML5是一个新的网络标准，仍处于发展阶段,为了取代现有的HTML 4.0.1和XHTML 1.0标准。他希望能够减少互联网富应用（RIA）对Flash，Silverlight，JavaFX等的依赖，并且提供更多能有效增强网络应用的API。</p>
+		</section>
+		<section class="slide">
+			<h2 contenteditable=true>HTML5时间表</h2>
+			<img src="img/html時間表.png" height="320" width="600" />
+		</section>
+		<section class="slide">
+			<h2>HTML5的八大新特性</h2>
+			<ul>
+				<li>语义</li>
+				<li>多媒体</li>
+				<li>离线储存</li>
+				<li>三维、图形与特效 </li>
+				<li>设备通用</li>
+				<li>性能与集成</li>
+				<li>连接</li>
+				<li>css3</li>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>HTML5的八大新特性</h2>
+			<img src="img/html5初體驗.png" width="600" height="400" />
+		</section>
+		<section class="slide">
+			<h2>First Look at HTML5</h2>
+			<p class="note">XHTML中DOCTYPE：</p>
+			&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+			<p class="note">HTML5中DOCTYPE：</p>
+			&lt;!DOCTYPE html&gt;
+			<p class="note">XHTML中&lt;html&gt;：</p>
+			&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+			<p class="note">HTML5中&lt;html&gt;：</p>
+			&lt;html lang="en"&gt;
+		</section>
+		<section class="slide">
+			<h2>语义化标签</h2>
+			<p>HTML 5 引入新的HTML元素，通过这些元素，开发者可以更细致的描述文档结构，让文档更加易懂，搜索引擎也能更好的理解页面中各部分间的关系，我们也可以更快更准确的搜索到信息。</p>
+			<img src="img/語義化2.png" width="600" height="240" />
+			<a href="example/html4-section.html" target="_blank">HTML 4</a>与
+			<a href="example/html5-section.html" target="_blank">HTML 5</a>
+		</section>
+		<section class="slide">
+			<h2>十个新入HTML标签</h2>
+			<p class="note">HTML 5提供的一些新的标签以及和HTML 4的区别。</p>
+			<table class="myTable" ,border="1" ,bordercolor="#660000" contenteditable="true">
+				<tr bgcolor="#999999">
+					<th>HTML 4</th>
+					<th>HTML 5</th>
+					<th>说明</th>
+				</tr>
+				<tr>
+					<td>div</td>
+					<td>article</td>
+					<td>标签定义外部的内容</td>
+				</tr>
+				<tr>
+					<td>div</td>
+					<td>aside</td>
+					<td>article 以外的内容，内容应该与 article 的内容相关</td>
+				</tr>
+				<tr>
+					<td>--</td>
+					<td>figcaption</td>
+					<td>定义 figure 元素的标题</td>
+				</tr>
+				<tr>
+					<td>dl&amp;h1</td>
+					<td>figure</td>
+					<td>figure与figcaption：figcaption元素为元素组添加标题</td>
+				</tr>
+				<tr>
+					<td>div</td>
+					<td>header</td>
+					<td>定义 section 或 document 的页眉</td>
+				</tr>
+				<tr>
+					<td>div</td>
+					<td>footer</td>
+					<td>定义 section 或 document 的页脚</td>
+				</tr>
+				<tr>
+					<td>div</td>
+					<td>hgroup</td>
+					<td>用于对网页或区段（section）的标题进行组合</td>
+				</tr>
+				<tr>
+					<td>div</td>
+					<td>nav</td>
+					<td>定义导航链接的部分</td>
+				</tr>
+				<tr>
+					<td>div</td>
+					<td>section</td>
+					<td>定义文档中的节（section、区段）</td>
+				</tr>
+				<tr>
+					<td>div</td>
+					<td>time</td>
+					<td>定义日期或时间，或者两者</td>
+				</tr>
+			</table>
+
+		</section>
+		<section class="slide">
+			<h2>其他新入标签和废弃标签</h2>
+			<p class="note">其他新入标签：</p>
+			&lt;audio&gt;、&lt;canvas&gt;、&lt;datalist&gt;、&lt;mark&gt;、&lt;progress&gt;、&lt;source&gt;、&lt;svg&gt;、&lt;video&gt;
+			<p class="note">html5废弃的一些元素：</p>
+			basefont、big、center、font、s、strike、tt、u
+			<p class="note">移除了对框架的支持，以下元素不会再出现在规范中：</p>
+			frame、frameset、noframes、acronym（被abbr取代）、applet（被object取代）、dir（被ul取代）
+		</section>
+		<section class="slide">
+			<h2>第一个简单的HTML5页面</h2>
+			<pre class="textSmall">
+                <code >&lt;!DOCTYPE html&gt;</code>
+                <code contenteditable="true" class="mark">&lt;html lang="zh-CN"&gt;</code>
+                <code contenteditable="true"><mark>&lt;head&gt;</mark></code>
+                <code>    &lt;title&gt;The frist HTML 5 page&lt;/title&gt;</code>
+                <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+                <code contenteditable="true"><mark>&lt;/head&gt;</mark></code>
+                <code contenteditable="true"><mark>&lt;body&gt;</mark></code>
+                <code>Enter text here.</code>
+                <code contenteditable="true"><mark>&lt;/body&gt;</mark></code>
+                <code contenteditable="true" class="mark">&lt;/html&gt;</code>
+            </pre>
+			<a href="example/fristHtml5Page.html" target="_blank">Like this!</a>
+			<a href="example/fristHtml5Page-brief.html" target="_blank">简洁Like this!</a>
+		</section>
+        <section class="slide">
+			<h2>多媒体</h2>
+			<p class="note">音频（Audio）和视频（Video）</p>
+			<p>Audio和Video是首批添加到HTML规范中的标签，他们的加入使得我们可以像插入一张图片那样处理音视频。 <a href="example/videoExample.html" target="_blank">Like this!</a></p>
+			<p>当前，video 元素支持三种视频格式：</p>
+			<table class="textSmall">
+				<tbody>
+					<tr>
+						<th>格式</th>
+						<th style="width:16%">IE</th>
+						<th style="width:16%">Firefox</th>
+						<th style="width:16%">Opera</th>
+						<th style="width:16%">Chrome</th>
+						<th style="width:16%">Safari</th>
+					</tr>
+
+					<tr>
+						<td>Ogg</td>
+						<td>No</td>
+						<td>3.5+</td>
+						<td>10.5+</td>
+						<td>5.0+</td>
+						<td>No</td>
+					</tr>
+
+					<tr>
+						<td>MPEG 4</td>
+						<td>9.0+</td>
+						<td>No</td>
+						<td>No</td>
+						<td>5.0+</td>
+						<td>3.0+</td>
+					</tr>
+
+					<tr>
+						<td>WebM</td>
+						<td>No</td>
+						<td>4.0+</td>
+						<td>10.6+</td>
+						<td>6.0+</td>
+						<td>No</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="smallTest">Ogg = 带有 Theora 视频编码和 Vorbis 音频编码的 Ogg 文件</p>
+			<p class="smallTest">MPEG4 = 带有 H.264 视频编码和 AAC 音频编码的 MPEG 4 文件</p>
+			<p class="smallTest">WebM = 带有 VP8 视频编码和 Vorbis 音频编码的 WebM 文件</p>
+
+		</section>
+		<section class="slide">
+			<h2>本地存储-Web存储</h2>
+			<p class="note ">HTML 5提供了两种在客户端存储数据的新方法：</p>
+			<ul>
+				<li>localStorage - 用于持久化本地储存，除非主动删除，否则永不过期。</li>
+				<li>sessionStorage - 用于存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问，当会话结束，数据也随之销毁。</li>
+			</ul>
+			<p class="note ">之前这些数据都是由Cookie完成，但Cookie有4k大小的限制，而且会随HTTP请求一起被传递，无形中拖慢网速、效率不高。</p>
+		</section>
+		<section class="slide">
+			<h2>HTML5 增强的表单</h2>
+			<p class="note">input标签type属性被赋予更多的类型：</p>
+			<p class="doubleSmall">
+				&lt;input type=email &gt;<br /> &lt;input type=url &gt;<br /> &lt;input type=number &gt;<br /> &lt;input type=tel &gt;<br /> &lt;input type=range min=20 max=100 step=2 &gt;<br /> &lt;input type=color value=#ff0000 &gt;<br /> &lt;input type=date &gt;<br
+				/> &lt;input type=time &gt;<br /> &lt;input type=datetime &gt;<br /> &lt;input type=datetime-local &gt;<br /> &lt;input type=month &gt;<br /> &lt;input type=week &gt;<br /> &lt;input type=time &gt;<br /> &lt;input type=datetime &gt;
+				<br /> &lt;input type=datetime-local &gt;<br /> &lt;input type=month &gt;<br /> &lt;input type=week &gt;<br /> &lt;input type=search results=s &gt;<br /> &lt;input type=text required &gt;<br /> &lt;input type=email required pattern=\w+@[a-z0-9]+\.[a-z]+/g
+				&gt;
+				<br /> ...
+				<a href="example/html5-from.html" target="_blank">Like this!</a>
+			</p>
+		</section>
+		<section class="slide">
+			<h2>设备通用</h2>
+			<p class="note">拖拽与拖放（Drap&amp;Drop）与文件处理(File Processing)</p>
+			<p>过去我们想实现网页中的拖拽效果，基本上都是使用DOM事件中的mousedown、mousemove、mouseup的鼠标事件监听模拟拖拽效果，为了实现实时拖拽，就要不停地获取鼠标坐标、不停地修改元素的位置，代码一大堆，性能却很差。现在有了HTML5原生的Drap&Drop拖拽事件，再结合FileAPI中的FileReader，实现这样的效果就会变得很容易。</p>
+			<a href="example/drap-drop.html" target="_blank">Like this!</a>
+		</section>
+		<section class="slide">
+			<h2>连接</h2>
+			<p class="note">WebSocket</p>
+			<p> 现在很多网站为实现即时通讯，所用技术都是轮询。这种模式需要浏览器不断地向服务器发出请求，然而HTTP请求的header信息非常长，这样会占用很多的带宽和服务器资源。<br/> WebSockets是在一个（TCP）接口进行双向通信技术，能更好地节省服务器资源和带宽。
+				<br/> 在WebSocket API中，浏览器和服务器只需要做一个握手动作，然后，浏览器和服务器之间就形成一条快速通道，两者之间直接就可以传送数据。</p>
+		</section>
+		<section class="slide">
+			<h2>三维、图形与特效</h2>
+			<p class="note">Canvas画布元素</p>
+			<p>传统网页，总是使用GIF或JPEG来显示图片，这种图形需要实现画好的“静态”图像，而Canvas则是利用JavaScript的一种会话手段，可以用它画图合成图像或做简单的动画。</p>
+			<a href="example/canvasExample.html" target="_blank">Like this!</a><br />
+			<a href="http://mrdoob.com/projects/chromeexperiments/ball-pool/" target="_blank">HTML5样例页面-ball-pool</a>
+			<a href="http://alteredqualia.com/canvasmol/#Curcumin" target="_blank">HTML5样例页面-Curcumin</a>
+			<a href="https://peterned.home.xs4all.nl/3d/" target="_blank">HTML5样例页面-3D</a>
+			<a href="http://www.effectgames.com/demos/canvascycle/" target="_blank">HTML5样例页面-canvascycle</a>
+			<a href="http://www.monocubed.com/lab/ribbon2/" target="_blank">HTML5样例页面-ribbon2</a>
+		</section>
+
+		<section class="slide">
+			<h2>性能与集成</h2>
+			<p class="note">XMLHttpRequest 2</p>
+			<p>作为XMLHttpRequest的改进版，XMLHttpRequest level 2 在更能上有了很大的改进，支持跨源 XMLHttpRequest和进度事件（Progress Events）。</p>
+		</section>
+		<section class="slide">
+			<h2>更多...</h2>
+			<ul>
+				<li>Geolocation - 获取浏览器用户地理位置信息</li>
+				<li>postMessage - 实现跨文档跨域消息传递</li>
+				<li>Web Workers - JavaScript多线程解决方案</li>
+				<li>And so on...</li>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>发展前景</h2>
+			<ul>
+				<li>在HTML 5未成熟应用的时候，流媒体播放等一些精彩应用必须借助第三方软件才可以实现，比如Flash等</li>
+				<li>现在HTML 5已经将其超过，它不但可以播放视频和音频</li>
+				<li>可以开发出各种网络在线应用程序，如标识的地理位置、离线存储、拖放、图片处理等。</li>
+				<li>W3C的HTML5社区领袖Shelley宣布，HTML5的开发工作已经接近完成，最后一次聆讯工作已经开始，那么该标准就将在2012年成为国际标准</li>
+				<li>HTML5应用越来越多</li>
+			</ul>
+		</section>
+
+		<section class="slide" id="picture">
+			<h2>THE END</h2>
+			<p id="end_tip">Thanks for listening!</p>
+			<img src="img/2246_150807101331_1.jpg" alt="" class="cover" width="100%" height="100%">
+			<img src="img/HTML5_logo_and_wordmark.png" width="200" height="200" align="right" />
+			<style>
+				#picture h2 {
+					color: #FFF;
+				}
+
+				#picture p {
+					color: #FFF;
+					font-size: larger;
+				}
+			</style>
+		</section>
+		<!--
+        	作者：408270653@qq.com
+        	时间：2016-04-01
+        	描述：角标
+        -->
+		<p class="badge">
+			<a href="https://github.com/Sogrey" target="_blank">by Sogrey</a>
+		</p>
+		<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+		<!--
+        	作者：408270653@qq.com
+        	时间：2016-04-01
+        	描述：进度
+        -->
+		<div class="progress"></div>
+		<script src="shower/shower.min.js"></script>
+
+	</body>
+
+</html>
